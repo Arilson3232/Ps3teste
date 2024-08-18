@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Arrastável</title>
+    <style>
+        #criarSelecao{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            position: absolute;
+            cursor: move;
+        }
+    </style>
+</head>
+<body>
+    <p id="meuSelect">casa de mamae </p>
+    
+    <div id="criarSelecao" onclick="ver()"></div>
+
+    
+    
+    <script>
+      document.addEventListener('keydown', function(event) {
+             alert(`Tecla presionada: ${event.key} (Código: ${event.keyCode})`);
+        });
+    </script>
+
+</body>
+</html>
